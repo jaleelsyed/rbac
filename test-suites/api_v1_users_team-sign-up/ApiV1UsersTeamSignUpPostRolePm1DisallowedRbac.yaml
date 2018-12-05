@@ -24,7 +24,7 @@ testCases:
     \n  'privileges' : [ ],\r\n  'username' : null,\r\n  'version' : null\r\n}"
   inactive: false
 assertions:
-- "@StatusCode != 401 OR @StatusCode == 403"
+- "@StatusCode != 401 AND @StatusCode == 403"
 cleanup: []
 severity: "Major"
 category: "RBAC"
